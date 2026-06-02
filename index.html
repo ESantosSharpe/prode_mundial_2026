@@ -1,0 +1,693 @@
+<html lang="es"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRODE Mundial 2026 🏆</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<script id="cfg" type="application/json">{"mk":"$2a$10$9MGfkg6.5e58bGXZo3nZDeBLMwM2dcp22t6sRhUblo4FETwB4Eixe","bi":"6a1f545bf5f4af5e29af81a2"}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#f0f0ee;min-height:100vh;color:#1a1a1a}
+#root{max-width:720px;margin:0 auto;background:#fff;min-height:100vh;padding:.75rem 1rem 4rem}
+h1{font-size:17px;font-weight:600}
+.btn{padding:9px 16px;border:1px solid #ccc;border-radius:8px;background:#fff;color:#1a1a1a;cursor:pointer;font-size:13px;font-family:inherit;line-height:1}
+.btn:hover{background:#f5f5f5}
+.btnp{background:#1a1a1a;color:#fff;border-color:#1a1a1a}
+.btnp:hover{background:#333}
+.btns{padding:6px 11px;font-size:12px}
+.btnd{color:#c0392b;border-color:#e74c3c}
+.btnd:hover{background:#fdf2f2}
+input[type=text],input[type=password],input[type=number]{width:100%;padding:9px 11px;border:1px solid #ccc;border-radius:8px;font-size:13px;font-family:inherit;background:#fff;color:#1a1a1a}
+input:focus{outline:none;border-color:#666}
+.lbl{font-size:12px;color:#666;display:block;margin:.55rem 0 3px}
+.err{color:#c0392b;font-size:12px;margin-top:5px;min-height:16px}
+.muted{color:#666;font-size:12px}
+.card{background:#f5f5f3;padding:.75rem;border-radius:8px}
+.tabs{display:flex;gap:2px;overflow-x:auto;padding-bottom:2px;margin-bottom:1rem;border-bottom:1px solid #e5e5e5}
+.tab{padding:7px 12px;border:none;background:transparent;color:#666;cursor:pointer;font-size:13px;font-family:inherit;white-space:nowrap;border-bottom:2px solid transparent}
+.tab.on{color:#1a1a1a;border-bottom-color:#1a1a1a;font-weight:600}
+.gb{margin-bottom:.85rem;border:1px solid #e5e5e5;border-radius:10px;overflow:hidden}
+.gh{padding:7px 12px;background:#f5f5f3;font-size:12px;font-weight:600;color:#555;display:flex;justify-content:space-between;align-items:center}
+.mr{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:5px;padding:6px 12px;border-bottom:1px solid #f0f0f0}
+.mr:last-child{border-bottom:none}
+.tm{font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ta{text-align:right}
+.ps{display:flex;gap:3px;flex-shrink:0}
+.pk{width:33px;height:28px;border:1px solid #ddd;border-radius:5px;background:#fff;color:#666;cursor:pointer;font-size:12px;font-weight:600;font-family:inherit}
+.pk:hover{background:#f5f5f5}
+.pH.sl{background:#d5f0d0;color:#1a6b1a;border-color:#4caf50}
+.pD.sl{background:#fff3cd;color:#7d5a00;border-color:#ffc107}
+.pA.sl{background:#ddeeff;color:#1040a0;border-color:#5588dd}
+.pH.ok{outline:2px solid #4caf50}.pA.ok{outline:2px solid #5588dd}.pD.ok{outline:2px solid #ffc107}
+.pk.bad{opacity:.28}
+.bdg{display:inline-block;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600}
+.bg1{background:#ffd166;color:#5a3e00}
+.bg2{background:#ddd;color:#444}
+.bgp{background:#d5f0d0;color:#1a5c1a}
+.bgi{background:#ddeeff;color:#1040a0}
+.bgx{background:#fde8e8;color:#a00}
+.tbl{width:100%;border-collapse:collapse;font-size:13px}
+.tbl th{padding:7px 8px;text-align:left;font-size:11px;color:#666;font-weight:600;border-bottom:1px solid #e0e0e0;background:#fafafa}
+.tbl td{padding:7px 8px;border-bottom:1px solid #f0f0f0}
+.rk{display:inline-flex;width:22px;height:22px;border-radius:50%;align-items:center;justify-content:center;font-size:11px;font-weight:600}
+.r1{background:#ffd166;color:#5a3e00}.r2{background:#ddd;color:#444}.r3{background:#f0a070;color:#5a2000}.rn{background:#f5f5f3;color:#666}
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:flex-start;justify-content:center;z-index:100;padding-top:60px}
+.modal{background:#fff;border-radius:12px;padding:1.4rem;width:min(390px,92vw);max-height:85vh;overflow-y:auto}
+.mt{font-size:15px;font-weight:600;margin-bottom:.9rem}
+.stky{position:sticky;bottom:0;padding:.65rem 0;background:#fff;border-top:1px solid #e5e5e5;margin-top:.5rem}
+.pbar-w{height:5px;background:#e5e5e5;border-radius:3px;overflow:hidden;margin-top:3px}
+.pbar{height:100%;background:#4f8ef7;border-radius:3px}
+.sb-w{height:7px;background:#e5e5e5;border-radius:4px;overflow:hidden;flex:1}
+.sb{height:100%;border-radius:4px}
+.gfb{width:30px;height:26px;border:1px solid #ccc;border-radius:5px;background:#fff;cursor:pointer;font-size:11px;font-weight:600;color:#666;font-family:inherit}
+.gfb.on{background:#1a1a1a;color:#fff;border-color:#1a1a1a}
+.gfb.dn{border-color:#4caf50;color:#1a5c1a}
+.pchip{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border:1px solid #e5e5e5;border-radius:8px;cursor:pointer;margin-bottom:5px}
+.pchip:hover{background:#f5f5f3}
+.info-box{background:#eef4ff;border:1px solid #b0c8f0;border-radius:8px;padding:.85rem 1rem;margin-bottom:.85rem}
+.info-box code{background:#dde8f8;padding:1px 5px;border-radius:4px;font-size:12px;font-family:monospace}
+.step{display:flex;gap:10px;margin-bottom:.75rem;align-items:flex-start}
+.step-n{width:24px;height:24px;border-radius:50%;background:#1a1a1a;color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.step p{font-size:13px;line-height:1.5}
+a{color:#1a6bcc}
+.loading{text-align:center;padding:2rem;color:#666}
+.spin{display:inline-block;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.pay-toggle{cursor:pointer;padding:4px 9px;border-radius:20px;font-size:11px;font-weight:600;border:1px solid;background:transparent}
+.pay-on{border-color:#4caf50;color:#1a5c1a}
+.pay-off{border-color:#e74c3c;color:#a00}
+.lock-banner{background:#fff8e1;border:1px solid #ffc107;border-radius:8px;padding:.75rem 1rem;margin-bottom:.85rem;display:flex;align-items:center;gap:.5rem;font-size:13px}
+.pk-ro{width:33px;height:28px;border:1px solid #ddd;border-radius:5px;font-size:12px;font-weight:600;pointer-events:none;opacity:.55}
+.pk-ro.sl-ro{opacity:1;cursor:default}
+.pH.sl-ro{background:#d5f0d0;color:#1a6b1a;border-color:#4caf50}
+.pD.sl-ro{background:#fff3cd;color:#7d5a00;border-color:#ffc107}
+.pA.sl-ro{background:#ddeeff;color:#1040a0;border-color:#5588dd}
+.bdg-lock{background:#fff3cd;color:#7d5a00}
+</style>
+</head>
+<body>
+<div id="root"><div class="loading"><span class="spin">⏳</span> Cargando…</div></div>
+<script>
+// ─── CAPTURA DEL HTML ORIGINAL (antes de cualquier cambio al DOM) ───────────
+const ORIG_HTML = document.documentElement.outerHTML;
+
+// ─── CONFIGURACIÓN (se completa por el wizard de setup) ──────────────────────
+const CFG = JSON.parse(document.getElementById('cfg').textContent);
+let MK = CFG.mk;   // Master Key de JSONBin
+let BI = CFG.bi;   // Bin ID
+
+// ─── DATOS DEL MUNDIAL ───────────────────────────────────────────────────────
+const GD = {
+  A:{n:'Grupo A',t:['México','Corea del Sur','Sudáfrica','Rep. Checa']},
+  B:{n:'Grupo B',t:['Canadá','Suiza','Qatar','Bosnia-Herz.']},
+  C:{n:'Grupo C',t:['Brasil','Marruecos','Escocia','Haití']},
+  D:{n:'Grupo D',t:['EE.UU.','Paraguay','Australia','Turquía']},
+  E:{n:'Grupo E',t:['Alemania','Curazao','C. de Marfil','Ecuador']},
+  F:{n:'Grupo F',t:['Países Bajos','Japón','Túnez','Suecia']},
+  G:{n:'Grupo G',t:['Bélgica','Egipto','Irán','Nueva Zelanda']},
+  H:{n:'Grupo H',t:['España','Cabo Verde','Arabia Saudita','Uruguay']},
+  I:{n:'Grupo I',t:['Francia','Senegal','Noruega','Irak']},
+  J:{n:'Grupo J',t:['Argentina','Argelia','Austria','Jordania']},
+  K:{n:'Grupo K',t:['Portugal','Colombia','Uzbekistán','RD Congo']},
+  L:{n:'Grupo L',t:['Inglaterra','Croacia','Ghana','Panamá']}
+};
+const PR = [[0,1],[0,2],[0,3],[1,2],[1,3],[2,3]];
+function gms(k){return PR.map(([a,b],i)=>({mid:`${k}_${i}`,h:GD[k].t[a],aw:GD[k].t[b],k}));}
+function hp(p){let h=0;for(let i=0;i<p.length;i++){h=((h<<5)-h)+p.charCodeAt(i);h|=0;}return h.toString(36);}
+
+// ─── API JSONBIN ──────────────────────────────────────────────────────────────
+const JAPI = 'https://api.jsonbin.io/v3';
+const TIMEOUT_MS = 12000;
+
+function fetchWithTimeout(url, opts={}){
+  const ctrl = new AbortController();
+  const tid = setTimeout(()=>ctrl.abort(), TIMEOUT_MS);
+  return fetch(url, {...opts, signal:ctrl.signal})
+    .then(r=>{clearTimeout(tid);return r;})
+    .catch(e=>{clearTimeout(tid);if(e.name==='AbortError')throw new Error('Tiempo de espera agotado (12s). Verificá tu conexión e intentá de nuevo.');throw e;});
+}
+
+async function binRead(){
+  const r = await fetchWithTimeout(`${JAPI}/b/${BI}/latest`,{headers:{'X-Master-Key':MK}});
+  if(r.status===401) throw new Error('Clave incorrecta (401). Verificá la Master Key en JSONBin.');
+  if(r.status===404) throw new Error('Bin no encontrado (404). El Bin ID puede ser incorrecto.');
+  if(!r.ok) throw new Error(`Error al leer (${r.status})`);
+  const d = await r.json();
+  return d.record ?? d;
+}
+
+async function binWrite(data){
+  const r = await fetchWithTimeout(`${JAPI}/b/${BI}`,{
+    method:'PUT',
+    headers:{'Content-Type':'application/json','X-Master-Key':MK},
+    body:JSON.stringify(data)
+  });
+  if(!r.ok) throw new Error(`Error al guardar (${r.status})`);
+}
+
+async function binCreate(){
+  const r = await fetchWithTimeout(`${JAPI}/b`,{
+    method:'POST',
+    headers:{'Content-Type':'application/json','X-Master-Key':MK,'X-Bin-Name':'Prode-Mundial-2026'},
+    body:JSON.stringify({users:[],results:{},settings:{fee:20000},predictions:{}})
+  });
+  if(!r.ok){const e=await r.text();throw new Error(`Error creando bin: ${r.status} — ${e}`);}
+  const d = await r.json();
+  return d.metadata.id;
+}
+
+// ─── ESTADO ──────────────────────────────────────────────────────────────────
+let DB = {users:[],results:{},settings:{fee:20000},predictions:{}};
+let S  = {sc:'setup',tab:'p',user:null,adm:false,fg:'ALL',sv:false,ls:null,mt:null,modal:null,err:''};
+
+const gu = n => DB.users.find(u=>u.name===n);
+const paid = () => DB.users.filter(u=>u.paid);
+const pool = () => paid().length * DB.settings.fee;
+const cp   = n => Object.keys((DB.predictions[n])||{}).length;
+const gd   = (n,k) => gms(k).filter(m=>((DB.predictions[n])||{})[m.mid]).length;
+const $    = id => document.getElementById(id);
+const se   = (id,msg) => {const e=$(id);if(e)e.textContent=msg;};
+const ts   = () => {const d=new Date();return`${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;};
+
+// ─── CÁLCULOS ─────────────────────────────────────────────────────────────────
+function calcSc(){
+  const sc={};
+  for(const u of DB.users){
+    const pr=(DB.predictions[u.name])||{};let pts=0,bon=0;
+    for(const k of Object.keys(GD)){
+      const ms=gms(k);let ok=0,pl=0;
+      for(const m of ms){if(DB.results[m.mid]!==undefined)pl++;if(DB.results[m.mid]!==undefined&&pr[m.mid]===DB.results[m.mid]){pts++;ok++;}}
+      if(pl===6&&ok===6)bon+=3;
+    }
+    sc[u.name]={pts,bon,tot:pts+bon};
+  }
+  return sc;
+}
+
+function calcPz(sc,srt){
+  const p=pool();if(!p||!srt.length)return{};
+  const pz={};const top=sc[srt[0]]?.tot||0;
+  const f1=srt.filter(u=>(sc[u]?.tot||0)===top);const p1=Math.round(p*.7);
+  f1.forEach(u=>{pz[u]=Math.round(p1/f1.length);});
+  if(f1.length===1&&srt.length>1){const s2=srt.find(u=>!pz[u]);if(s2){const t2=sc[s2]?.tot||0;const f2=srt.filter(u=>!pz[u]&&(sc[u]?.tot||0)===t2);const p2=Math.round(p*.3);f2.forEach(u=>{pz[u]=Math.round(p2/f2.length);});}}
+  return pz;
+}
+
+// ─── HELPERS GUARDADO ─────────────────────────────────────────────────────────
+async function dbSave(updater){
+  S.sv=true;render();
+  try{
+    const fresh=await binRead();
+    updater(fresh);
+    await binWrite(fresh);
+    DB=fresh;S.ls=ts();
+  }catch(e){alert('Error al guardar: '+e.message);}
+  S.sv=false;render();
+}
+
+async function dbReload(){
+  $('root').innerHTML='<div class="loading"><span class="spin">↻</span> Recargando…</div>';
+  try{DB=await binRead();}catch(e){alert('Error al recargar: '+e.message);}
+  render();
+}
+
+// ─── DOWNLOAD CONFIGURED VERSION ─────────────────────────────────────────────
+function downloadConfigured(){
+  const html = ORIG_HTML
+    .replace('"mk":""','`"mk":"${MK}"`'.replace('`','').replace('$','').replace('{MK}',MK))
+    .replace('"bi":""',`"bi":"${BI}"`);
+  const html2 = ORIG_HTML
+    .replace('"mk":""',`"mk":"${MK}"`)
+    .replace('"bi":""',`"bi":"${BI}"`);
+  const blob = new Blob([html2],{type:'text/html;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'prode-mundial-2026-configurado.html';
+  a.click();
+}
+
+// ─── RENDER PRINCIPAL ─────────────────────────────────────────────────────────
+function render(){
+  if(!MK||!BI) rSetup();
+  else if(S.sc==='login') rLogin();
+  else rApp();
+}
+
+// ─── PANTALLA SETUP ──────────────────────────────────────────────────────────
+function rSetup(){
+  $('root').innerHTML=`
+<div style="max-width:440px;margin:1rem auto">
+<h1 style="margin-bottom:1rem">🏆 PRODE Mundial 2026 — Configuración inicial</h1>
+<div class="info-box">
+  <p style="font-size:13px;font-weight:600;margin-bottom:.5rem">Esta configuración la hace <u>una sola vez</u> el organizador (Eduardo)</p>
+  <p class="muted">Una vez configurado, descargás el archivo listo y lo subís a Netlify. Tus compañeros solo abren la URL.</p>
+</div>
+
+<div style="margin-bottom:1.25rem">
+  <div class="step"><div class="step-n">1</div><div class="step p"><p>Entrá a <a href="https://jsonbin.io" target="_blank">jsonbin.io</a>, creá una cuenta gratuita y copiá tu <strong>Master Key</strong> (aparece en la pantalla de inicio o en Account → API Keys).</p></div></div>
+  <div class="step"><div class="step-n">2</div><div class="step p"><p>Pegá la Master Key acá abajo y presioná "Crear base de datos".</p></div></div>
+  <div class="step"><div class="step-n">3</div><div class="step p"><p>Descargá el archivo configurado, andá a <a href="https://app.netlify.com/drop" target="_blank">netlify.com/drop</a>, arrastralo y ya tenés tu URL.</p></div></div>
+</div>
+
+<label class="lbl">Master Key de JSONBin</label>
+<input type="password" id="mk-inp" placeholder="$2b$10$..." autocomplete="off" value="${MK}">
+<div id="setup-err" class="err"></div>
+
+${!BI?`<button class="btn btnp" style="width:100%;margin-top:.75rem" onclick="doSetup()">
+  Crear base de datos →
+</button>`:`
+<div style="margin-top:.75rem;padding:.75rem;background:#d5f0d0;border:1px solid #4caf50;border-radius:8px">
+  <p style="font-size:13px;font-weight:600;color:#1a5c1a">✓ Base de datos creada</p>
+  <p class="muted" style="margin-top:3px">Bin ID: <code style="background:#b8e0b8;padding:1px 5px;border-radius:4px;font-family:monospace;font-size:12px">${BI}</code></p>
+</div>
+<button class="btn btnp" style="width:100%;margin-top:.75rem" onclick="downloadConfigured()">
+  ⬇ Descargar archivo configurado (para subir a Netlify)
+</button>
+<button class="btn" style="width:100%;margin-top:.5rem" onclick="S.sc='login';render()">
+  Continuar y usar ahora →
+</button>`}
+</div>`;
+  $('mk-inp')?.addEventListener('keydown',e=>{if(e.key==='Enter')doSetup();});
+}
+
+async function doSetup(){
+  const key=($('mk-inp')?.value||'').trim();
+  if(!key){se('setup-err','Ingresá tu Master Key');return;}
+  MK=key;
+  $('root').innerHTML='<div class="loading"><span class="spin">⏳</span> Creando base de datos…</div>';
+  try{
+    BI=await binCreate();
+    DB={users:[],results:{},settings:{fee:20000},predictions:{}};
+    rSetup();
+  }catch(e){MK='';$('root').innerHTML='';rSetup();se('setup-err','Error: '+e.message+' — Revisá que la Master Key sea correcta.');}
+}
+
+// ─── PANTALLA LOGIN ──────────────────────────────────────────────────────────
+function rLogin(){
+  $('root').innerHTML=`
+<div style="max-width:340px;margin:1rem auto">
+<div style="text-align:center;margin-bottom:1.25rem">
+  <div style="font-size:36px">🏆</div>
+  <h1 style="margin-top:4px">PRODE Mundial 2026</h1>
+  <p class="muted" style="margin-top:4px">Fase de grupos · 72 partidos · 12 grupos</p>
+</div>
+<div style="margin-bottom:.75rem">
+  <p style="font-size:13px;font-weight:600;margin-bottom:.5rem">Seleccioná tu jugador</p>
+  ${DB.users.length?DB.users.map(u=>`<div class="pchip" onclick="openLP('${u.name}')">
+    <span style="font-size:13px">${u.name}</span>
+    <span class="bdg ${u.paid?'bgp':'bgx'}">${u.paid?'Pagó':'Pendiente'}</span>
+  </div>`).join(''):`<p class="muted" style="padding:.4rem 0">Sin jugadores registrados aún. Sé el primero.</p>`}
+</div>
+<button class="btn btnp" style="width:100%;margin-bottom:.75rem" onclick="openReg()">+ Registrarme como nuevo jugador</button>
+<div style="display:flex;align-items:center;gap:8px;margin:.6rem 0">
+  <div style="flex:1;height:1px;background:#e5e5e5"></div><span class="muted">admin</span><div style="flex:1;height:1px;background:#e5e5e5"></div>
+</div>
+<div style="display:flex;gap:7px;margin-top:.6rem">
+  <input type="password" id="adm-pin" placeholder="PIN administrador (2026)">
+  <button class="btn" onclick="doAdm()">Entrar</button>
+</div>
+<div id="lerr" class="err"></div>
+<div style="margin-top:1rem;text-align:center">
+  <button class="btn btns" onclick="dbReload()" title="Recargar datos del servidor"><i class="ti ti-refresh"></i> Recargar</button>
+</div>
+</div>
+${S.modal==='lp'?rLPM():''}${S.modal==='reg'?rRegM():''}`;
+  $('adm-pin')?.addEventListener('keydown',e=>{if(e.key==='Enter')doAdm();});
+}
+
+function rLPM(){return`<div class="modal-bg" onclick="cmBg(event)"><div class="modal">
+<div class="mt">Ingresar como <strong>${S.mt}</strong></div>
+<label class="lbl">Tu PIN</label>
+<input type="password" id="pin-i" placeholder="PIN..." maxlength="20" autocomplete="off">
+<div id="merr" class="err"></div>
+<div style="display:flex;gap:8px;justify-content:flex-end;margin-top:1rem">
+  <button class="btn" onclick="cm()">Cancelar</button>
+  <button class="btn btnp" onclick="doLP()">Entrar</button>
+</div></div></div>`;}
+
+function rRegM(){return`<div class="modal-bg" onclick="cmBg(event)"><div class="modal">
+<div class="mt">Registrarse como jugador</div>
+<label class="lbl">Nombre o apodo</label>
+<input type="text" id="rn" placeholder="Tu nombre..." maxlength="20" autocomplete="off">
+<label class="lbl">Elegí un PIN (mínimo 4 caracteres)</label>
+<input type="password" id="rp" placeholder="PIN..." maxlength="20" autocomplete="off">
+<label class="lbl">Confirmar PIN</label>
+<input type="password" id="rp2" placeholder="Repetir..." maxlength="20" autocomplete="off">
+<div id="merr" class="err"></div>
+<p class="muted" style="margin-top:.4rem">Anotá tu PIN, lo necesitarás para volver a ingresar.</p>
+<div style="display:flex;gap:8px;justify-content:flex-end;margin-top:1rem">
+  <button class="btn" onclick="cm()">Cancelar</button>
+  <button class="btn btnp" onclick="doReg()">Registrarme</button>
+</div></div></div>`;}
+
+function rCPM(){return`<div class="modal-bg" onclick="cmBg(event)"><div class="modal">
+<div class="mt">Cambiar PIN</div>
+<label class="lbl">PIN actual</label><input type="password" id="op" placeholder="PIN actual..." maxlength="20" autocomplete="off">
+<label class="lbl">Nuevo PIN</label><input type="password" id="np" placeholder="Nuevo PIN..." maxlength="20" autocomplete="off">
+<label class="lbl">Confirmar</label><input type="password" id="np2" placeholder="Repetir..." maxlength="20" autocomplete="off">
+<div id="merr" class="err"></div>
+<div style="display:flex;gap:8px;justify-content:flex-end;margin-top:1rem">
+  <button class="btn" onclick="cm()">Cancelar</button>
+  <button class="btn btnp" onclick="doCP()">Cambiar</button>
+</div></div></div>`;}
+
+// ─── APP PRINCIPAL ───────────────────────────────────────────────────────────
+function rApp(){
+  const sc=calcSc();const srt=DB.users.map(u=>u.name).sort((a,b)=>(sc[b]?.tot||0)-(sc[a]?.tot||0));
+  const pc=cp(S.user);const pct=Math.round(pc/72*100);
+  const tabs=[{id:'p',l:'Pronósticos'},{id:'r',l:S.adm?'Resultados ⚙':'Resultados'},{id:'t',l:'Tabla'},{id:'s',l:'Stats'},...(S.adm?[{id:'a',l:'Admin'}]:[])];
+  const u=gu(S.user);
+  let content='';
+  if(S.tab==='p')content=rPron();
+  else if(S.tab==='r')content=rRes();
+  else if(S.tab==='t')content=rTabla(sc,srt);
+  else if(S.tab==='s')content=rStats();
+  else if(S.tab==='a')content=rAdm();
+  $('root').innerHTML=`
+<div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:.7rem;border-bottom:1px solid #e5e5e5;margin-bottom:.75rem">
+  <div>
+    <h1>🏆 PRODE Mundial 2026</h1>
+    <div style="display:flex;align-items:center;gap:5px;margin-top:3px">
+      <span class="muted">${S.user}</span>
+      ${S.adm?'<span class="bdg bg1">Admin</span>':''}
+      ${u?`<span class="bdg ${u.paid?'bgp':'bgx'}">${u.paid?'Pagó':'Pendiente'}</span>`:''}
+      ${u?.locked?'<span class="bdg bdg-lock">🔒 Enviado</span>':''}    </div>
+  </div>
+  <div style="display:flex;gap:5px;align-items:center">
+    <div style="text-align:right"><div class="muted">${pc}/72 cargados</div><div class="pbar-w" style="width:72px"><div class="pbar" style="width:${pct}%"></div></div></div>
+    <button class="btn btns" title="Recargar datos" onclick="dbReload()"><i class="ti ti-refresh"></i></button>
+    <button class="btn btns" onclick="openCP()">PIN</button>
+    <button class="btn btns" onclick="doLogout()">Salir</button>
+  </div>
+</div>
+<div class="tabs">${tabs.map(t=>`<button class="tab${S.tab===t.id?' on':''}" onclick="setTab('${t.id}')">${t.l}</button>`).join('')}</div>
+${content}
+${S.modal==='chgpin'?rCPM():''}`;
+  addEvs();
+}
+
+// ─── TAB: PRONÓSTICOS ─────────────────────────────────────────────────────────
+function rPron(){
+  const pr=(DB.predictions[S.user])||{};
+  const locked=gu(S.user)?.locked;
+  const gks=Object.keys(GD);const active=S.fg==='ALL'?gks:[S.fg];
+  const totalDone=Object.keys(pr).length;
+
+  const flt=`<div style="display:flex;flex-wrap:wrap;gap:3px;margin-bottom:.7rem">
+    <button class="gfb${S.fg==='ALL'?' on':''}" onclick="setFg('ALL')">Todos</button>
+    ${gks.map(g=>{const d=gd(S.user,g);return`<button class="gfb${S.fg===g?' on':''}${d===6?' dn':''}" onclick="setFg('${g}')">${g}</button>`;}).join('')}
+  </div>`;
+
+  const blk=active.map(k=>{
+    const ms=gms(k);const done=ms.filter(m=>pr[m.mid]).length;
+    const ar=ms.every(m=>DB.results[m.mid]!==undefined);
+    const be=ar&&ms.every(m=>pr[m.mid]===DB.results[m.mid]);
+    const bh=be?'<span style="color:#1a6b1a;font-size:11px">+3 ✓</span>':done===6&&!ar?'<span style="color:#1a6b1a;font-size:11px">+3 posibles</span>':'';
+    const rows=ms.map(m=>{
+      const sel=pr[m.mid],res=DB.results[m.mid];
+      if(locked){
+        const roCls=v=>`pk-ro p${v}${sel===v?' sl-ro':''}`;
+        const okBadge=res!==undefined&&sel?` <span style="font-size:10px;margin-left:2px">${sel===res?'✓':'✗'}</span>`:'';
+        return`<div class="mr"><span class="tm">${m.h}</span><div class="ps"><span class="${roCls('H')}">1</span><span class="${roCls('D')}">X</span><span class="${roCls('A')}">2</span></div><span class="tm ta">${m.aw}${okBadge}</span></div>`;
+      }
+      const c=v=>{let x=`pk p${v}`;if(sel===v)x+=' sl';if(res!==undefined&&sel===v)x+=(res===v?' ok':' bad');return x;};
+      return`<div class="mr"><span class="tm">${m.h}</span><div class="ps"><button class="${c('H')}" data-m="${m.mid}" data-v="H">1</button><button class="${c('D')}" data-m="${m.mid}" data-v="D">X</button><button class="${c('A')}" data-m="${m.mid}" data-v="A">2</button></div><span class="tm ta">${m.aw}</span></div>`;
+    }).join('');
+    return`<div class="gb"><div class="gh"><span>${GD[k].n} — ${GD[k].t.join(', ')}</span><span>${done}/6 ${bh}</span></div>${rows}</div>`;
+  }).join('');
+
+  if(locked){
+    return`<div class="lock-banner">🔒 <strong>Pronósticos enviados y bloqueados.</strong> Ya no podés modificarlos. Si hubo un error, pedile al organizador que te desbloquee.</div>
+${flt}${blk}`;
+  }
+
+  const footer=`<div class="stky">
+  <div style="display:flex;gap:8px">
+    <button class="btn" style="flex:1" onclick="savePr()"><i class="ti ti-device-floppy"></i> Guardar borrador${S.sv?' …':''}</button>
+    <button class="btn" style="flex:1;background:#1a5c1a;color:#fff;border-color:#1a5c1a" onclick="confirmLock()">🔒 Enviar pronósticos</button>
+  </div>
+  ${S.ls?`<p class="muted" style="text-align:center;margin-top:3px">Borrador guardado ${S.ls}</p>`:''}
+  <p class="muted" style="text-align:center;margin-top:4px">Tenés ${totalDone}/72 cargados. <strong>Al enviar quedan bloqueados definitivamente.</strong></p>
+</div>`;
+
+  return`${flt}${blk}${footer}${S.modal==='lock'?rLockM(totalDone):''}`;
+}
+
+function rLockM(done){
+  return`<div class="modal-bg" onclick="cmBg(event)"><div class="modal">
+<div class="mt">🔒 Confirmar envío de pronósticos</div>
+<div style="background:#fff8e1;border:1px solid #ffc107;border-radius:8px;padding:.85rem;margin-bottom:1rem;font-size:13px">
+  <strong>¡Atención! Esta acción es irreversible.</strong><br>
+  Una vez enviados, tus pronósticos quedan bloqueados y no podrás modificarlos.<br><br>
+  Tenés <strong>${done}/72 partidos</strong> completados.
+  ${done<72?`<br><span style="color:#a00">Te faltan ${72-done} partidos sin pronóstico.</span>`:'<br><span style="color:#1a5c1a">✓ Tenés todos los partidos completados.</span>'}
+</div>
+<p style="font-size:13px;margin-bottom:1rem">¿Confirmás el envío definitivo?</p>
+<div style="display:flex;gap:8px;justify-content:flex-end">
+  <button class="btn" onclick="cm()">Volver y revisar</button>
+  <button class="btn" style="background:#1a5c1a;color:#fff;border-color:#1a5c1a" onclick="doLock()">Sí, enviar y bloquear</button>
+</div></div></div>`;}
+
+
+// ─── TAB: RESULTADOS ─────────────────────────────────────────────────────────
+function rRes(){
+  const cnt=Object.keys(DB.results).length;
+  if(!S.adm){
+    return`<div><p class="muted" style="margin-bottom:.75rem">${cnt}/72 partidos con resultado. Solo el admin puede cargarlos.</p>
+    ${Object.keys(GD).map(k=>{const ms=gms(k).filter(m=>DB.results[m.mid]!==undefined);if(!ms.length)return'';
+    return`<div class="gb"><div class="gh">${GD[k].n}</div>${ms.map(m=>{const r=DB.results[m.mid];return`<div class="mr"><span class="tm">${m.h}</span><div class="ps"><span class="bdg ${r==='H'?'bgi':r==='A'?'bgp':''}" style="min-width:60px;text-align:center">${r==='H'?'1 — '+m.h:r==='A'?'2 — '+m.aw:'X — Empate'}</span></div><span class="tm ta">${m.aw}</span></div>`;}).join('')}</div>`;}).join('')}</div>`;
+  }
+  const blk=Object.keys(GD).map(k=>{
+    const rows=gms(k).map(m=>{const res=DB.results[m.mid];const c=v=>`pk p${v}${res===v?' sl':''}`;
+    return`<div class="mr"><span class="tm">${m.h}</span><div class="ps"><button class="${c('H')}" data-r="${m.mid}" data-val="H">1</button><button class="${c('D')}" data-r="${m.mid}" data-val="D">X</button><button class="${c('A')}" data-r="${m.mid}" data-val="A">2</button></div><span class="tm ta">${m.aw}</span></div>`;}).join('');
+    return`<div class="gb"><div class="gh">${GD[k].n}</div>${rows}</div>`;
+  }).join('');
+  return`<div><p class="muted" style="margin-bottom:.5rem">Cargados: ${cnt}/72. 1=local, X=empate, 2=visitante.</p>${blk}
+<div class="stky"><button class="btn btnp" style="width:100%" onclick="saveR()"><i class="ti ti-device-floppy"></i> Guardar resultados${S.sv?' …':''}</button>${S.ls?`<p class="muted" style="text-align:center;margin-top:3px">Guardado ${S.ls}</p>`:''}</div></div>`;
+}
+
+// ─── TAB: TABLA ───────────────────────────────────────────────────────────────
+function rTabla(sc,srt){
+  const pz=calcPz(sc,srt);const p=pool();
+  const rows=srt.map((n,i)=>{
+    const s=sc[n]||{pts:0,bon:0,tot:0};const prize=pz[n];const rk=['r1','r2','r3'][i]||'rn';
+    return`<tr${n===S.user?' style="background:#eef4ff"':''}>
+      <td><span class="rk ${rk}">${i+1}</span></td>
+      <td><strong>${n}</strong>${n===S.user?' <span class="muted">(vos)</span>':''} ${DB.users.find(u=>u.name===n)?.locked?'🔒':''}</td>
+      <td style="text-align:center"><span class="bdg bgi">${s.pts}</span></td>
+      <td style="text-align:center">${s.bon>0?`<span class="bdg bgp">+${s.bon}</span>`:'-'}</td>
+      <td style="text-align:center;font-weight:600">${s.tot}</td>
+      <td class="muted" style="text-align:right">${cp(n)}/72</td>
+      <td style="text-align:right">${prize?`<span class="bdg ${i===0?'bg1':'bg2'}">$${prize.toLocaleString('es-AR')}</span>`:'—'}</td>
+    </tr>`;
+  }).join('');
+  return`<div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:1rem">
+  <div class="card"><p class="muted">Pozo acumulado</p><p style="font-size:19px;font-weight:600">$${p.toLocaleString('es-AR')}</p><p class="muted">${paid().length} pagaron · $${DB.settings.fee.toLocaleString('es-AR')}/c/u</p></div>
+  <div class="card"><p class="muted">1° premio (70%)</p><p style="font-size:18px;font-weight:600">$${Math.round(p*.7).toLocaleString('es-AR')}</p></div>
+  <div class="card"><p class="muted">2° premio (30%)</p><p style="font-size:18px;font-weight:600">$${Math.round(p*.3).toLocaleString('es-AR')}</p></div>
+</div>
+<div style="overflow-x:auto"><table class="tbl" style="width:100%">
+<thead><tr><th>#</th><th>Jugador</th><th style="text-align:center">Pts</th><th style="text-align:center">Bonus</th><th style="text-align:center">Total</th><th style="text-align:right">Pron.</th><th style="text-align:right">Premio</th></tr></thead>
+<tbody>${rows||`<tr><td colspan="7" style="text-align:center;padding:1.5rem;color:#666">Sin participantes</td></tr>`}</tbody>
+</table></div>
+<p class="muted" style="margin-top:.65rem">En empate el premio se divide entre los empatados. · Actualizado: ${new Date().toLocaleString('es-AR')}</p>
+</div>`;
+}
+
+// ─── TAB: ESTADÍSTICAS ────────────────────────────────────────────────────────
+function rStats(){
+  if(!DB.users.length)return`<p class="muted" style="padding:1rem">Sin participantes.</p>`;
+  const avg=Math.round(DB.users.reduce((a,u)=>a+cp(u.name),0)/DB.users.length);
+  const rcnt=Object.keys(DB.results).length;
+  const blk=Object.keys(GD).map(k=>{
+    const rows=gms(k).map(m=>{
+      let h=0,d=0,a=0;DB.users.forEach(u=>{const p=((DB.predictions[u.name])||{})[m.mid];if(p==='H')h++;else if(p==='D')d++;else if(p==='A')a++;});
+      const tot=h+d+a;if(!tot)return`<div style="padding:5px 12px;border-bottom:1px solid #f0f0f0;font-size:11px;color:#666">${m.h} vs ${m.aw} — sin datos</div>`;
+      const ph=Math.round(h/tot*100),pd=Math.round(d/tot*100),pa=100-ph-pd;const r=DB.results[m.mid];
+      return`<div style="display:grid;grid-template-columns:1.1fr 2fr;gap:8px;padding:5px 12px;border-bottom:1px solid #f0f0f0;align-items:center">
+<span style="font-size:11px;color:#666">${m.h}<br>vs ${m.aw}</span>
+<div>${[['H','1',ph,'#4caf50'],['D','X',pd,'#f59e0b'],['A','2',pa,'#5588dd']].map(([v,l,pv,col])=>`<div style="display:flex;align-items:center;gap:3px;margin-bottom:2px"><span style="font-size:10px;min-width:12px;color:${col};font-weight:600">${l}</span><div class="sb-w"><div class="sb" style="width:${pv}%;background:${col}"></div></div><span style="font-size:10px;min-width:25px;color:${col}">${pv}%</span>${r===v?`<span class="bdg" style="font-size:9px;padding:1px 5px;background:${col}20;color:${col}">${l}✓</span>`:''}</div>`).join('')}</div>
+</div>`;}).join('');
+    return`<div class="gb" style="margin-bottom:.75rem"><div class="gh">${GD[k].n}</div>${rows}</div>`;
+  }).join('');
+  return`<div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:1rem">
+  <div class="card"><p class="muted">Participantes</p><p style="font-size:19px;font-weight:600">${DB.users.length}</p></div>
+  <div class="card"><p class="muted">Promedio pronóst.</p><p style="font-size:19px;font-weight:600">${avg}/72</p></div>
+  <div class="card"><p class="muted">Resultados cargados</p><p style="font-size:19px;font-weight:600">${rcnt}/72</p></div>
+</div>
+<p style="font-size:14px;font-weight:600;margin-bottom:.5rem">Consenso por partido</p>
+<p class="muted" style="margin-bottom:.75rem">% de participantes que eligieron cada resultado. El resultado real aparece marcado.</p>
+${blk}<p class="muted">Generado: ${new Date().toLocaleString('es-AR')}</p></div>`;
+}
+
+// ─── TAB: ADMIN ───────────────────────────────────────────────────────────────
+function rAdm(){
+  return`<div>
+<p style="font-size:14px;font-weight:600;margin-bottom:.75rem">Panel de administración</p>
+<div class="gb" style="margin-bottom:.9rem">
+  <div class="gh">Cuota por jugador</div>
+  <div style="padding:.75rem 1rem;display:flex;align-items:center;gap:.75rem;flex-wrap:wrap">
+    <span>$</span>
+    <input type="number" id="fee-i" value="${DB.settings.fee}" min="0" step="1000" style="max-width:140px">
+    <button class="btn btnp btns" onclick="saveFee()">Guardar cuota</button>
+    <span class="muted">Pozo actual: <strong>$${pool().toLocaleString('es-AR')}</strong> (${paid().length} pagaron)</span>
+  </div>
+</div>
+<div class="gb" style="margin-bottom:.9rem">
+  <div class="gh">Jugadores — pagos y estado de pronósticos</div>
+  ${DB.users.map(u=>`<div style="display:flex;align-items:center;justify-content:space-between;padding:9px 12px;border-bottom:1px solid #f0f0f0">
+  <span>${u.name}</span>
+  <div style="display:flex;align-items:center;gap:8px">
+    <span class="muted">${cp(u.name)}/72 pronóst.</span>
+    <button onclick="togglePaid('${u.name}')" class="pay-toggle ${u.paid?'pay-on':'pay-off'}">${u.paid?'✓ Pagó':'✗ Pendiente'}</button>
+    ${u.locked?`<button class="btn btns" onclick="toggleLock('${u.name}')">🔓 Desbloquear</button>`:'<span class="muted" style="font-size:11px">Editable</span>'}
+    <button class="btn btns btnd" onclick="removeUser('${u.name}')">Eliminar</button>
+  </div></div>`).join('')||`<p class="muted" style="padding:.75rem 1rem">Sin participantes.</p>`}
+</div>
+<p class="muted" style="margin-bottom:.75rem">El pozo se actualiza automáticamente al marcar los pagos.</p>
+<div class="gb">
+  <div class="gh">Opciones avanzadas</div>
+  <div style="padding:.75rem 1rem">
+    <button class="btn btns" onclick="downloadConfigured()"><i class="ti ti-download"></i> Re-descargar archivo configurado</button>
+  </div>
+</div>
+</div>`;
+}
+
+// ─── LISTENERS ────────────────────────────────────────────────────────────────
+function addEvs(){
+  document.querySelectorAll('[data-m][data-v]').forEach(b=>b.addEventListener('click',()=>{
+    if(gu(S.user)?.locked) return;
+    if(!DB.predictions[S.user])DB.predictions[S.user]={};
+    DB.predictions[S.user][b.dataset.m]=b.dataset.v;
+    rApp();
+  }));
+  document.querySelectorAll('[data-r][data-val]').forEach(b=>b.addEventListener('click',()=>{
+    DB.results[b.dataset.r]=b.dataset.val;rApp();
+  }));
+  $('pin-i')?.addEventListener('keydown',e=>{if(e.key==='Enter')doLP();});
+  $('rp2')?.addEventListener('keydown',e=>{if(e.key==='Enter')doReg();});
+  $('np2')?.addEventListener('keydown',e=>{if(e.key==='Enter')doCP();});
+}
+
+// ─── ACCIONES ─────────────────────────────────────────────────────────────────
+window.setTab=t=>{S.tab=t;rApp();}
+window.setFg=g=>{S.fg=g;rApp();}
+window.doLogout=()=>{S.user=null;S.adm=false;S.sc='login';rLogin();}
+window.cm=()=>{S.modal=null;render();}
+window.cmBg=e=>{if(e.target.classList.contains('modal-bg'))cm();}
+window.openLP=n=>{S.mt=n;S.modal='lp';rLogin();}
+window.openReg=()=>{S.modal='reg';rLogin();}
+window.openCP=()=>{S.modal='chgpin';rApp();}
+window.downloadConfigured=downloadConfigured;
+
+window.doAdm=()=>{
+  const v=$('adm-pin')?.value;
+  if(v==='2026'){S.adm=true;S.user='Admin';S.sc='app';S.tab='a';rApp();}
+  else se('lerr','PIN incorrecto');
+}
+
+window.doLP=async()=>{
+  const pin=$('pin-i')?.value||'';const u=gu(S.mt);
+  if(!u){se('merr','Usuario no encontrado');return;}
+  if(u.pin!==hp(pin)){se('merr','PIN incorrecto');return;}
+  S.user=u.name;S.adm=false;S.modal=null;S.sc='app';S.tab='p';rApp();
+}
+
+window.doReg=async()=>{
+  const n=($('rn')?.value||'').trim();const p=$('rp')?.value||'';const p2=$('rp2')?.value||'';
+  if(!n){se('merr','Ingresá un nombre');return;}
+  if(DB.users.find(u=>u.name===n)){se('merr','Ese nombre ya está tomado');return;}
+  if(p.length<4){se('merr','PIN mínimo 4 caracteres');return;}
+  if(p!==p2){se('merr','Los PINs no coinciden');return;}
+  await dbSave(db=>{db.users.push({name:n,pin:hp(p),paid:false,locked:false});});
+  S.user=n;S.modal=null;S.sc='app';S.tab='p';rApp();
+}
+
+window.doCP=async()=>{
+  const op=$('op')?.value||'';const np=$('np')?.value||'';const np2=$('np2')?.value||'';
+  const u=gu(S.user);if(!u){se('merr','Error');return;}
+  if(u.pin!==hp(op)){se('merr','PIN actual incorrecto');return;}
+  if(np.length<4){se('merr','Mínimo 4 caracteres');return;}
+  if(np!==np2){se('merr','No coinciden');return;}
+  await dbSave(db=>{const usr=db.users.find(x=>x.name===S.user);if(usr)usr.pin=hp(np);});
+  S.modal=null;rApp();
+}
+
+window.savePr=async()=>{
+  if(gu(S.user)?.locked){alert('Tus pronósticos están bloqueados. No podés modificarlos.');return;}
+  const localPreds=JSON.parse(JSON.stringify((DB.predictions[S.user])||{}));
+  await dbSave(db=>{db.predictions[S.user]=localPreds;});
+}
+
+window.saveR=async()=>{
+  const localRes=JSON.parse(JSON.stringify(DB.results));
+  await dbSave(db=>{db.results=localRes;});
+}
+
+window.confirmLock=()=>{S.modal='lock';rApp();}
+
+window.doLock=async()=>{
+  const localPreds=JSON.parse(JSON.stringify((DB.predictions[S.user])||{}));
+  await dbSave(db=>{
+    db.predictions[S.user]=localPreds;
+    const u=db.users.find(x=>x.name===S.user);
+    if(u) u.locked=true;
+  });
+  S.modal=null;rApp();
+}
+
+window.toggleLock=async n=>{
+  if(!confirm(`¿Desbloquear los pronósticos de ${n}? Podrá modificarlos.`))return;
+  await dbSave(db=>{const u=db.users.find(x=>x.name===n);if(u)u.locked=false;});
+}
+
+
+window.saveFee=async()=>{
+  const fee=parseInt($('fee-i')?.value)||0;
+  await dbSave(db=>{db.settings.fee=fee;});
+}
+
+window.togglePaid=async n=>{
+  await dbSave(db=>{const u=db.users.find(x=>x.name===n);if(u)u.paid=!u.paid;});
+}
+
+window.removeUser=async n=>{
+  if(!confirm(`¿Eliminar a ${n}? Se borrarán sus pronósticos.`))return;
+  await dbSave(db=>{db.users=db.users.filter(u=>u.name!==n);delete db.predictions[n];});
+}
+
+// ─── INICIO ───────────────────────────────────────────────────────────────────
+(async()=>{
+  if(MK && BI){
+    $('root').innerHTML='<div class="loading"><span class="spin">↻</span> Conectando con JSONBin… <span style="font-size:11px;color:#999">(máx. 12 segundos)</span></div>';
+    try{
+      DB=await binRead();
+      S.sc='login';
+      render();
+    }catch(e){
+      $('root').innerHTML=`<div style="padding:1.5rem;max-width:440px;margin:0 auto">
+        <p style="font-weight:600;font-size:15px;margin-bottom:.5rem">❌ Error al conectar</p>
+        <div style="background:#fdf2f2;border:1px solid #f5c2c2;border-radius:8px;padding:.85rem;margin-bottom:1rem;font-size:13px;color:#7a1a1a">
+          ${e.message}
+        </div>
+        <p style="font-size:13px;margin-bottom:.75rem;font-weight:600">¿Qué puede estar pasando?</p>
+        <ul style="font-size:12px;color:#555;padding-left:1.2rem;line-height:1.8">
+          <li>Subiste el archivo <strong>original</strong> en vez del <strong>configurado</strong> (el que descargaste después del setup)</li>
+          <li>La Master Key o el Bin ID no quedaron bien grabados en el archivo</li>
+          <li>JSONBin está caído momentáneamente</li>
+          <li>Tu conexión a internet está bloqueando la API</li>
+        </ul>
+        <div style="margin-top:1rem;display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn btnp" onclick="location.reload()">↺ Reintentar</button>
+          <button class="btn" onclick="MK='';BI='';render()">⚙ Volver al setup</button>
+        </div>
+        <p style="font-size:11px;color:#999;margin-top:.75rem">MK: ${MK?MK.slice(0,12)+'…':'(vacío)'} — BI: ${BI||'(vacío)'}</p>
+      </div>`;
+    }
+  } else {
+    render();
+  }
+})();
+</script></body></html>
